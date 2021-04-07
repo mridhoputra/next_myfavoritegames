@@ -1,65 +1,20 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
-export default function Home() {
+export default function Home () {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ninja List | Home</title>
+        <meta name="keywords" content="ninjas"/>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <div>
+        <h1 className={styles.title}>Hello Website</h1>
+        <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed eros at nibh tincidunt dictum in vitae massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin nunc mi, sodales et pulvinar a, fermentum fringilla leo. Duis luctus elit ac urna ullamcorper, ullamcorper mollis ante vulputate. Proin dictum, ipsum vitae tempus scelerisque, ligula ex interdum metus, a euismod nunc libero vel neque. Quisque lacus ex, malesuada a condimentum eget, lacinia sit amet risus. Phasellus ligula turpis, cursus eget nisl ac, faucibus fermentum est. Proin sollicitudin, arcu a cursus vehicula, libero massa semper justo, non maximus nulla nibh vel sapien. Sed diam ipsum, porta at condimentum ut, egestas quis eros. Aenean nec nunc neque. In consequat neque a sapien dictum mattis.</p>
+        <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed eros at nibh tincidunt dictum in vitae massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin nunc mi, sodales et pulvinar a, fermentum fringilla leo. Duis luctus elit ac urna ullamcorper, ullamcorper mollis ante vulputate. Proin dictum, ipsum vitae tempus scelerisque, ligula ex interdum metus, a euismod nunc libero vel neque. Quisque lacus ex, malesuada a condimentum eget, lacinia sit amet risus. Phasellus ligula turpis, cursus eget nisl ac, faucibus fermentum est. Proin sollicitudin, arcu a cursus vehicula, libero massa semper justo, non maximus nulla nibh vel sapien. Sed diam ipsum, porta at condimentum ut, egestas quis eros. Aenean nec nunc neque. In consequat neque a sapien dictum mattis.</p>
+        <Link href='/ninjas'><a className={styles.btn}>See Game List</a></Link>
+      </div>
+    </>
   )
 }
